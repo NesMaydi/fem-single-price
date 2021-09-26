@@ -1,0 +1,263 @@
+:root {
+  --title-second-card-color: #2ab3b1;
+  --title-sign-up-color: #c0df33;
+  --title-intro-color: #9aa7be;
+  --white-color: #fff;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: #f2f2f2;
+}
+
+/* duplicate elements */
+
+.duplicate-title {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white-color);
+  letter-spacing: -0.225px;
+}
+
+.duplicate-paragraph {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.175px;
+}
+
+#card-content {
+  width: 311px;
+  height: 722px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white-color);
+  row-gap: 0;
+  margin: 72px auto;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 5px;
+  color: var(--white-color);
+}
+
+/* section 1 */
+
+#join-section {
+  height: 268px;
+}
+
+#join-section > h1,
+h2,
+p {
+  margin-left: 24px;
+}
+#join-title {
+  color: var(--title-second-card-color);
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.25px;
+  margin-top: 28px;
+}
+#days-title {
+  color: var(--title-sign-up-color);
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 24px;
+  letter-spacing: -0.1875px;
+}
+#intro-community {
+  color: var(--title-intro-color);
+  margin-top: 18px;
+  width: 263px;
+  height: 104px;
+}
+
+/* section 2 */
+
+#subscription-section {
+  height: 227px;
+  background-color: var(--title-second-card-color);
+}
+
+#subscription-section > h2,
+p,
+button {
+  margin-left: 24px;
+}
+
+#monthly-subscription {
+  margin-top: 24px;
+}
+
+#price-element {
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: -0.4px;
+  margin-top: 18px;
+}
+#month {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+#acces-element {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  margin-top: 4px;
+}
+
+#sign-up-btn {
+  width: 263px;
+  height: 48px;
+  height: 48px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  background-color: var(--title-sign-up-color);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.2px;
+  outline: none;
+  border: none;
+  margin-top: 26px;
+}
+
+#sign-up-btn:hover {
+  transform: scale(1.015);
+}
+
+#sign-up-btn:active {
+  transform: translateY(1px);
+}
+
+/* section 3 */
+
+#why-us-section {
+  height: 227px;
+  background-color: var(--title-second-card-color);
+  opacity: 0.85;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#why-us-section > h2,
+p {
+  margin-left: 24px;
+}
+#why-us {
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+#content-paragraph {
+  width: 238px;
+  height: 140px;
+  text-align: left;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+line-height: 20px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  #card-content {
+    width: 635px;
+    height: 475px;
+    display: grid;
+    grid-template-rows: 216px 259px;
+    grid-template-columns: repeat(2, 317.5px);
+    grid-template-areas:
+      "join join"
+      "monthly why";
+  }
+
+  #join-section > h1,
+  h2,
+  p,
+  button {
+    margin-left: 40px;
+  }
+
+  #subscription-section >
+  h2,
+  p,
+  button {
+    margin-left: 40px;
+  }
+
+  #why-us-section >
+  h2,
+  p,
+  button {
+    margin-left: 40px;
+  }
+
+  #join-section {
+    grid-area: join;
+    width: 635px;
+    height: 216px;
+  }
+
+  #join-title {
+    margin-top: 40px;
+    height: 28px;
+    width: 324px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+  }
+
+  #days-title {
+    height: 21px;
+    width: 367px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    margin-top: 24px;
+  }
+  #intro-community {
+    height: 52px;
+width: 555px;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: -0.2px;
+
+  }
+
+  #subscription-section {
+    grid-area: monthly;
+    height: 259px;
+    width: 317px;
+  }
+
+  #monthly-subscription{
+    margin-top: 40px;
+  }
+
+  #sign-up-btn{
+    width: 237px;
+  }
+  #why-us-section {
+    grid-area: why;
+    height: 259px;
+    width: 318px;
+  }
+#why-us{
+  margin-top: 40px;
+}
+
+  
+}
